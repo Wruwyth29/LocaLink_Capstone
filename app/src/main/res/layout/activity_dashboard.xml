@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="238dp"
+        android:layout_height="306dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/localink__1__removebg_preview" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="-135dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:text="On-Going Transactions"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/OnGoingTransactionsBtn"
+            android:layout_width="224dp"
+            android:layout_height="97dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginTop="-150dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/border_text" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="372dp"
+                android:layout_height="113dp"
+                android:layout_below="@+id/OnGoingTransactionsBtn"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_text"
+   >
+
+            </RelativeLayout>
+
+           <TextView
+               android:id="@+id/Name_OnGoingTransactions"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/textView6"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="40dp"
+               android:fontFamily="sans-serif"
+               android:text="None"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+ />
+
+
+            <Button
+                android:id="@+id/PinnedAnnouncementBtn"
+                android:layout_width="372dp"
+                android:layout_height="135dp"
+                android:layout_below="@id/relativeLayout"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/green_border_text"
+ />
+
+              <TextView
+                  android:id="@+id/PinnedAnnouncement"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/relativeLayout"
+                  android:layout_marginTop="35dp"
+                  android:layout_marginLeft="50dp"
+                  android:text="Pinned Announcements"
+                  android:textColor="@color/black"
+ />
+
+              <TextView
+                  android:id="@+id/Title_PinnedAnnouncement"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/PinnedAnnouncement"
+                  android:layout_toRightOf="@id/PinnedAnnouncement"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="-60dp"
+                  android:text="Title"
+                  android:textColor="@color/black"
+                  android:textSize="18dp"
+                  android:textStyle="bold"
+ />
+
+                 <TextView
+                     android:id="@+id/Description_PinnedAnnouncement"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/Title_PinnedAnnouncement"
+                     android:layout_toRightOf="@+id/Title_PinnedAnnouncement"
+                     android:layout_marginLeft="-35dp"
+                     android:layout_marginTop="5dp"
+                     android:text="Description"
+                     android:textColor="@color/black"
+ />
+
+                <ImageView
+                    android:id="@+id/UserProfile_PinnedAnnouncements"
+                    android:layout_width="209dp"
+                    android:layout_height="265dp"
+                    android:layout_below="@id/PinnedAnnouncement"
+                    android:layout_marginTop="-85dp"
+                    android:layout_marginLeft="-24dp"
+                    app:srcCompat="@drawable/userprofile" />
+
+                      <Button
+                          android:id="@+id/TransactionHistoryBtn"
+                          android:layout_width="372dp"
+                          android:layout_height="150dp"
+                          android:layout_below="@id/PinnedAnnouncementBtn"
+                          android:layout_marginTop="20dp"
+                          android:layout_marginLeft="20dp"
+                          android:background="@drawable/border_text"
+ />
+
+
+
+                        <TextView
+                            android:id="@+id/TransactionHistory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/UserProfile_PinnedAnnouncements"
+                            android:layout_marginTop="-40dp"
+                            android:layout_marginLeft="35dp"
+                            android:text="Transaction History"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+ />
+
+                        <ImageView
+                            android:id="@+id/UserProfile_TransactionHistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="231dp"
+                            android:layout_marginLeft="-237dp"
+                            android:layout_below="@id/TransactionHistory"
+                            android:layout_marginTop="-65dp"
+                            tools:srcCompat="@drawable/userprofile" />
+
+                         <TextView
+                             android:id="@+id/textView"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@id/TransactionHistory"
+                             android:layout_marginLeft="150dp"
+                             android:layout_marginTop="70dp"
+                             android:text="Status"
+                             android:textSize="16dp"
+                             android:textStyle="bold"
+ />
+
+                          <TextView
+                              android:id="@+id/UserName_TransactionHistory"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_below="@+id/TransactionHistory"
+                              android:layout_marginTop="10dp"
+                              android:layout_marginLeft="150dp"
+                              android:text="Name"
+                              android:textColor="@color/black"
+                              android:textSize="17dp"
+                              android:textStyle="bold"
+ />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/UserName_TransactionHistory"
+                                android:layout_marginLeft="150dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Job Description"
+                                android:textSize="16dp"
+ />
+
+                              <TextView
+                                  android:id="@+id/Dash_Barangay"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_below="@id/Name_OnGoingTransactions"
+                                  android:layout_marginTop="115dp"
+                                  android:layout_marginLeft="40dp"
+                                  android:text="Barangay"
+                                  android:textColor="@color/black"
+                                  android:textSize="17dp"
+                                  android:textStyle="bold"
+ />
+
+                                <TextView
+                                    android:id="@+id/Dash_Gigwork"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/Name_OnGoingTransactions"
+                                    android:layout_toRightOf="@id/Dash_Barangay"
+                                    android:layout_marginTop="115dp"
+                                    android:layout_marginLeft="60dp"
+                                    android:text="Gig Work"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                   <TextView
+                                       android:layout_width="109dp"
+                                       android:layout_height="46dp"
+                                       android:layout_below="@id/Name_OnGoingTransactions"
+                                       android:layout_toRightOf="@id/Dash_Gigwork"
+                                       android:layout_marginTop="110dp"
+                                       android:layout_marginLeft="40dp"
+                                       android:text="Community Wall"
+                                       android:textAlignment="center"
+                                       android:textColor="@color/black"
+                                       android:textSize="15dp"
+                                       android:textStyle="bold"
+ />
+
+                                     <ImageView
+                                         android:id="@+id/UserProfile_OnGoingTransactions"
+                                         android:layout_width="252dp"
+                                         android:layout_height="310dp"
+                                         android:layout_below="@id/imageView2"
+                                         android:layout_marginTop="-260dp"
+                                         android:layout_alignParentRight="true"
+                                         android:layout_marginRight="-40dp"
+                                         app:srcCompat="@drawable/userprofile" />
+
+                                     <Button
+                                         android:id="@+id/BarangayBtn"
+                                         android:layout_width="142dp"
+                                         android:layout_height="141dp"
+                                         android:layout_below="@id/Name_OnGoingTransactions"
+                                         android:layout_marginTop="10dp"
+                                         android:layout_marginLeft="6dp"
+                                         android:background="@drawable/barangayicon"
+ />
+
+                                      <Button
+                                          android:id="@+id/GigWorkBtn"
+                                          android:layout_width="142dp"
+                                          android:layout_height="141dp"
+                                          android:layout_below="@id/Name_OnGoingTransactions"
+                                          android:layout_toRightOf="@id/BarangayBtn"
+                                          android:layout_marginTop="10dp"
+                                          android:layout_marginLeft="-13dp"
+                                          android:background="@drawable/gigwork_removebg_preview"
+ />
+
+                                      <Button
+                                          android:id="@+id/CommunityWallBtn"
+                                          android:layout_width="67dp"
+                                          android:layout_height="64dp"
+                                          android:layout_below="@id/Name_OnGoingTransactions"
+                                          android:layout_toRightOf="@id/GigWorkBtn"
+                                          android:layout_marginTop="50dp"
+                                          android:layout_marginLeft="27dp"
+                                          android:background="@drawable/communitywall"
+ />
+
+                                        <ImageView
+                                            android:id="@+id/imageView6"
+                                            android:layout_width="45dp"
+                                            android:layout_height="45dp"
+                                            android:layout_below="@id/Dash_Barangay"
+                                            android:layout_toLeftOf="@id/PinnedAnnouncement"
+                                            android:layout_marginTop="47dp"
+                                            android:layout_marginRight="-67dp"
+                                            app:srcCompat="@drawable/greenpin_removebg_preview" />
+
+                                          <Button
+                                              android:id="@+id/ChatBtn"
+                                              android:layout_width="101dp"
+                                              android:layout_height="92dp"
+                                              android:layout_alignParentBottom="true"
+                                              android:layout_marginBottom="20dp"
+                                              android:background="@drawable/chaticon" />
+
+                                            <Button
+                                                android:id="@+id/SupportChatBtn"
+                                                android:layout_width="82dp"
+                                                android:layout_height="72dp"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_marginRight="30dp"
+                                                android:layout_marginBottom="30dp"
+                                                android:layout_alignParentBottom="true"
+                                                android:background="@drawable/customer_support_removebg_preview"
+ />
+
+                                              <Button
+                                                  android:id="@+id/NotificationBell"
+                                                  android:layout_width="83dp"
+                                                  android:layout_height="79dp"
+                                                  android:layout_alignParentRight="true"
+                                                  android:layout_marginRight="55dp"
+                                                  android:layout_marginTop="72dp"
+                                                  android:background="@drawable/notificationbell"
+ />
+                                                  <Button
+                                                      android:id="@+id/UserProfileBtn"
+                                                      android:layout_width="103dp"
+                                                      android:layout_height="102dp"
+                                                      android:layout_alignParentRight="true"
+                                                      android:layout_marginRight="-15dp"
+                                                      android:layout_marginTop="61dp"
+                                                      android:background="@drawable/userprofile"/>
+
+    <Button
+        android:id="@+id/LogoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:layout_toLeftOf="@id/imageView2"
+        android:layout_marginRight="-100dp"
+        android:layout_marginTop="85dp"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        />
+
+
+
+
+</RelativeLayout>

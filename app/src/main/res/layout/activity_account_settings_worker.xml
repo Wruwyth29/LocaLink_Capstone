@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account_settings_worker">
+
+    <ImageView
+        android:id="@+id/AccountSettingsWorker_Logo"
+        android:layout_width="238dp"
+        android:layout_height="208dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/localink__1__removebg_preview" />
+
+    <TextView
+        android:id="@+id/Hiring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp"
+        android:text="Worker Account"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/AccountSettingsWorker_NotificationBell"
+        android:layout_width="83dp"
+        android:layout_height="79dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/notificationbell"
+        />
+
+    <Button
+        android:id="@+id/AccountSettingsWorker_UserProfileBtn"
+        android:layout_width="103dp"
+        android:layout_height="102dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-15dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/userprofile"
+        />
+
+    <Button
+        android:id="@+id/AccountSettingsWorker_UserProfile"
+        android:layout_width="251dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="-35dp"
+        android:background="@drawable/userprofile" />
+
+    <EditText
+        android:id="@+id/AccountSettingsWorker_FirstName"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccountSettingsWorker_Logo"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_toRightOf="@id/AccountSettingsWorker_UserProfile"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="First Name"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+
+    <EditText
+        android:id="@+id/AccountSettingsWorker_MiddleName"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccountSettingsWorker_Logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_toRightOf="@id/AccountSettingsWorker_UserProfile"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="Middle Name"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/AccountSettingsWorker_LastName"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccountSettingsWorker_MiddleName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_toRightOf="@id/AccountSettingsWorker_UserProfile"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="Last Name"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/AccountSettingsWorker_Age"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/AccountSettingsWorker_LastName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="220dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="15dp"
+        android:paddingBottom="5dp"
+        android:text="Age"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="240dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/AccountSettingsWorker_LastName"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adlam_display"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/AccountSettingsWorker_BirthDate"
+        android:layout_width="147dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/AccountSettingsWorker_LastName"
+        android:layout_marginLeft="-190dp"
+        android:layout_marginTop="72dp"
+        android:layout_toRightOf="@id/AccountSettingsWorker_Age"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="15dp"
+        android:paddingBottom="5dp"
+        android:text="MM/DD/YYYY"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthdate"
+        android:layout_below="@id/AccountSettingsWorker_LastName"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adlam_display"
+        android:textSize="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="-190dp"
+        android:layout_toRightOf="@id/AccountSettingsWorker_Age"/>
+
+    <EditText
+        android:id="@+id/AccountSettingsWorker_Sex"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/AccountSettingsWorker_LastName"
+        android:layout_toLeftOf="@id/AccountSettingsWorker_Age"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="15dp"
+        android:paddingBottom="5dp"
+        android:text="Sex"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex"
+        android:layout_below="@id/AccountSettingsWorker_LastName"
+        android:layout_toLeftOf="@id/AccountSettingsWorker_Age"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adlam_display"
+        android:textSize="24dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"/>
+
+    <EditText
+        android:id="@+id/AccountSettingsWorker_Address"
+        android:layout_width="150pt"
+        android:layout_height="90dp"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="10dp"
+        android:text="Address"
+        android:textColor="#828282"
+        android:textStyle="italic"
+        android:layout_below="@+id/AccountSettingsWorker_Sex"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_below="@id/AccountSettingsWorker_Sex"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"/>
+
+    <CheckBox
+        android:id="@+id/AccountSettingsWorker_Handyman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkbox"
+        android:layout_below="@+id/AccountSettingsWorker_Address"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Handyman Services"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_below="@id/AccountSettingsWorker_Address"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="75dp"
+        android:layout_toRightOf="@id/AccountSettingsWorker_Handyman"/>
+
+    <CheckBox
+        android:id="@+id/AccountSettingsWorker_Deliveries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkbox"
+        android:layout_below="@+id/AccountSettingsWorker_Handyman"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliveries"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_below="@id/AccountSettingsWorker_Handyman"
+        android:layout_toRightOf="@id/AccountSettingsWorker_Deliveries"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <CheckBox
+        android:id="@+id/AccountSettingsWorker_Laundry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkbox"
+        android:layout_below="@+id/AccountSettingsWorker_Deliveries"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laundry"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_below="@id/AccountSettingsWorker_Deliveries"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/AccountSettingsWorker_Laundry"
+        android:layout_marginTop="15dp"/>
+
+    <CheckBox
+        android:id="@+id/AccountSettingsWorker_Maid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkbox"
+        android:layout_below="@+id/AccountSettingsWorker_Address"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="130dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On-Call Maid"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/AccountSettingsWorker_Maid"
+        android:layout_below="@id/AccountSettingsWorker_Address"
+        android:layout_marginLeft="-120dp"
+        android:layout_marginTop="75dp"/>
+
+
+    <CheckBox
+        android:id="@+id/AccountSettingsWorker_PetService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkbox"
+        android:layout_below="@+id/AccountSettingsWorker_Maid"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="130dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Services"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/AccountSettingsWorker_Maid"
+        android:layout_below="@id/AccountSettingsWorker_Maid"
+        android:layout_marginLeft="-120dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of Service"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_below="@id/AccountSettingsWorker_Address"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/Edit_AccountSettingsWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:layout_below="@id/AccountSettingsWorker_Laundry"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:text="Edit"/>
+
+    <Button
+        android:id="@+id/Back_AccountSettingsWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:layout_below="@id/AccountSettingsWorker_Laundry"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/Edit_AccountSettingsWorker"
+        android:textColor="@color/white"
+        android:text="Back"/>
+
+
+
+
+
+</RelativeLayout>

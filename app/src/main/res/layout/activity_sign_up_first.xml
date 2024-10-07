@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up_first">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="238dp"
+        android:layout_height="306dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/localink__1__removebg_preview" />
+
+    <TextView
+        android:id="@+id/SignUp_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_below="@+id/Logo"
+        android:layout_marginTop="-150dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose what type of account you want to create."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/alata"
+        android:layout_below="@id/SignUp_Tv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/Step1_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUp_Tv"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/black_circle"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/Step2_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUp_Tv"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/Step1_img"
+        android:background="@drawable/green_circle"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/Step3_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUp_Tv"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/Step2_img"
+        android:background="@drawable/green_circle"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/Step4_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUp_Tv"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/Step3_img"
+        android:background="@drawable/green_circle"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/Step5_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUp_Tv"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/Step4_img"
+        android:background="@drawable/green_circle"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+
+    <ImageView
+        android:layout_width="105dp"
+        android:layout_height="109dp"
+        android:layout_below="@id/Step1_img"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/button1" />
+
+    <Button
+        android:id="@+id/SignUp_worker"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/Step1_img"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/worker_icon_signup" />
+
+    <ImageView
+        android:layout_width="227dp"
+        android:layout_height="109dp"
+        android:layout_below="@+id/Step4_img"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="62dp"
+        android:layout_toRightOf="@id/SignUp_worker"
+        android:background="@drawable/button1" />
+
+    <TextView
+        android:id="@+id/worker_description"
+        android:layout_width="212dp"
+        android:layout_height="98dp"
+        android:layout_below="@id/Step4_img"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="67dp"
+        android:layout_toRightOf="@id/SignUp_worker"
+        android:justificationMode="inter_word"
+        android:textColor="@color/white"
+        android:text="This is a worker account. People could hire you for minor jobs, depending on service that you offer. However, you cannot hire anyone using this type of account." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Step1_img"
+        android:text="Worker Account"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:layout_width="105dp"
+        android:layout_height="109dp"
+        android:layout_below="@id/SignUp_worker"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/button1" />
+
+    <Button
+        android:id="@+id/SignUp_employer"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/SignUp_worker"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/employer_icon_signup" />
+
+    <ImageView
+        android:layout_width="227dp"
+        android:layout_height="109dp"
+        android:layout_below="@+id/worker_description"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@id/SignUp_worker"
+        android:background="@drawable/button1" />
+
+    <TextView
+        android:layout_width="212dp"
+        android:layout_height="98dp"
+        android:layout_below="@id/worker_description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="73dp"
+        android:layout_toRightOf="@id/SignUp_worker"
+        android:justificationMode="inter_word"
+        android:text="This is an employer account. You could hire potential workers for minor jobs that you require. However, you cannot be hired by anyone using this type of account."
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignUp_worker"
+        android:text="Employer Account"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/Confirm_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:layout_below="@id/SignUp_employer"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:text="Confirm"/>
+
+    <Button
+        android:id="@+id/Cancel_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:layout_below="@id/SignUp_employer"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@id/Confirm_SignUp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="Confirm"/>
+
+
+</RelativeLayout>

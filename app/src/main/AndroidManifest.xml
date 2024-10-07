@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Localink"
+        tools:targetApi="31">
+        <activity
+            android:name=".gig_work_employer"
+            android:exported="false" />
+        <activity
+            android:name=".employer_job_posting"
+            android:exported="false" />
+        <activity
+            android:name=".community_wall"
+            android:exported="false" />
+        <activity
+            android:name=".transaction_history"
+            android:exported="false" />
+        <activity
+            android:name=".privacy_settings_worker"
+            android:exported="false" />
+        <activity
+            android:name=".account_settings_worker"
+            android:exported="false" />
+        <activity
+            android:name=".sign_up_fifth"
+            android:exported="false" />
+        <activity
+            android:name=".sign_up_fourth"
+            android:exported="false" />
+        <activity
+            android:name=".sign_up_second"
+            android:exported="false" />
+        <activity
+            android:name=".sign_up_first"
+            android:exported="false" />
+        <activity
+            android:name=".sign_up_third"
+            android:exported="false" />
+        <activity
+            android:name=".Sign_Up_Second"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp_First"
+            android:exported="false" />
+        <activity
+            android:name=".OnGoingTransactions"
+            android:exported="false" />
+        <activity
+            android:name=".Barangay_Hiring"
+            android:exported="false" />
+        <activity
+            android:name=".barangay_volunteer_work"
+            android:exported="false" />
+        <activity
+            android:name=".barangay_hiring_available_contracts"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

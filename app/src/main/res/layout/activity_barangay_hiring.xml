@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Barangay_Hiring">
+
+    <ImageButton
+        android:id="@+id/Barangay_Hiring_BackBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/backbtn" />
+
+    <ImageView
+        android:id="@+id/Logo_BaranggayPage"
+        android:layout_width="238dp"
+        android:layout_height="208dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/localink__1__removebg_preview" />
+
+        <TextView
+            android:id="@+id/Hiring"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="100dp"
+            android:text="Hiring"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/NotificationBell"
+                android:layout_width="71dp"
+                android:layout_height="63dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/notificationbell" />
+
+            <Button
+                android:id="@+id/Barangay_Hiring_VolunteerBtn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/Hiring"
+                android:background="@drawable/button2"
+                android:text="Volunteer"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/Barangay_Hiring_HiringBtn"
+                android:layout_width="200dp"
+                android:layout_height="40.2dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/Hiring"
+                android:background="@drawable/button1"
+                android:text="Hiring"
+                android:textColor="@android:color/white" />
+
+           <CalendarView
+               android:id="@+id/Barangay_Hiring_Calendar"
+               android:layout_width="360dp"
+               android:layout_height="260dp"
+                android:layout_below="@id/Barangay_Hiring_VolunteerBtn"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="23dp"
+               android:background="@drawable/calendarbg" />
+
+            <TextView
+                android:id="@+id/tvOngoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Barangay_Hiring_Calendar"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="20dp"
+                android:text="On-Going Contract"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Barangay_Hiring_OnGoingContractBtn"
+                android:layout_width="365dp"
+                android:layout_height="93dp"
+                android:layout_below="@id/tvOngoing"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_text" />
+
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_OnGoingContract_Name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvOngoing"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="35dp"
+                android:text="Name:"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_OnGoingContract_DatenTime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_below="@id/Barangay_Hiring_OnGoingContract_Name_tv"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="35dp"
+                android:text="Date and Time:"
+                android:textSize="13sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvAvailable"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/Barangay_Hiring_Calendar"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="25dp"
+                android:text="Available Contracts"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/Barangay_Hiring_ContractHistoryBtn"
+                android:layout_width="206dp"
+                android:layout_height="95dp"
+                android:layout_below="@+id/tvAvailable"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/border_text" />
+
+           <TextView
+               android:id="@+id/Barangay_Hiring_ContractHistory_tv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:layout_below="@id/tvAvailable"
+               android:layout_marginTop="25dp"
+               android:layout_marginLeft="25dp"
+               android:text="Street Sweeping"
+               android:textSize="13sp"
+               android:textStyle="bold"
+               android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_ContractHistory_Seemore_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Barangay_Hiring_ContractHistory_tv"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="15dp"
+                android:text="See More"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/IndicatorHiring"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/Barangay_Hiring_Calendar"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/indicator" />
+
+            <TextView
+                android:id="@+id/tvContracts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Barangay_Hiring_Calendar"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="14dp"
+                android:text="Contracts History"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/Barangay_Hiring_AvailableContractsBtn"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/tvAvailable"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_text" />
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_AvailableContracts_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAvailable"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="25dp"
+                android:text="Street Sweeping"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_Contract_Status"
+                android:layout_width="69dp"
+                android:layout_height="21dp"
+                android:layout_below="@id/Barangay_Hiring_ContractHistory_tv"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Completed"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_AvailableContracts_Seemore_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Barangay_Hiring_AvailableContracts_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:text="See More"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ChatBtn"
+                android:layout_width="101dp"
+                android:layout_height="92dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/chaticon" />
+
+            <ImageButton
+                android:layout_width="58dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/customer_support_removebg_preview" />
+
+            <ImageButton
+                android:layout_width="113dp"
+                android:layout_height="116dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-15dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/userprofile" />
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_AvailableContracts_OpenSlots_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Barangay_Hiring_AvailableContracts_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="131dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Open Slots"
+                android:textSize="13sp"
+                android:textColor="@color/black" />
+
+
+</RelativeLayout>

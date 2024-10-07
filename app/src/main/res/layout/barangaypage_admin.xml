@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminsView_BarangayPage">
+
+    <Button
+        android:id="@+id/BackBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backbtn2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/localink_logo" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bell" />
+
+    <TextView
+        android:id="@+id/gigwork_worksite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="500dp"
+        android:text="Volunteer"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/VolunteerBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#3BA863"
+        android:minWidth="200dp"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="Volunteer"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/HiringBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/black"
+        android:minWidth="200dp"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="Hiring"
+        android:textColor="@android:color/white"
+        android:textSize="14dp" />
+
+    <CalendarView
+        android:id="@+id/Calendar"
+        android:layout_width="360dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/calendarbg" />
+
+    <LinearLayout
+        android:id="@+id/work1"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Calendar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/border_text"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/volunteer_work"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="16dp"
+            android:text="Collect Plastic Bottles"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edit_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT DETAILS"
+            android:textColor="#808080"
+        android:padding="4dp"
+        android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/work2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/border_text"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@+id/work1"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/volunteer_work2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="16dp"
+            android:text="Street Sweeping"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edit_details2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT DETAILS"
+            android:textColor="#808080"
+            android:padding="4dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/work3"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/border_text"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@+id/work2"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/volunteer_work3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="16dp"
+            android:text="Street Sweeping"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edit_details3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT DETAILS"
+            android:textColor="#808080"
+            android:padding="4dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:padding="12dp"
+        android:background="@drawable/border_text"
+        android:layout_below="@id/work3"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/volunteer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volunteer Workers"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <!-- See more Text -->
+        <TextView
+            android:id="@+id/see_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See more"
+            android:textSize="14sp"
+            android:textColor="#808080"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp" />
+
+
+
+            <!-- Profile Icon -->
+
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#4CAF50"
+            android:contentDescription="Profile Image"
+            android:elevation="4dp"
+            android:padding="8dp"
+            android:src="@drawable/user2" />
+
+        <TextView
+                    android:id="@+id/profile_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/volunteer_title"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="90dp"
+                    android:text="Online"
+                    android:textSize="12sp"
+                    android:textColor="#808080" />
+
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_status"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="5dp"
+            android:text="Micko Sapinoso"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="90dp"
+            android:layout_below="@id/profile_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:text="Collect Plastic Bottles"
+            android:textColor="#808080"
+            android:textSize="12sp" />
+
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/plus"  />
+
+    <ImageView
+        android:id="@+id/chatsupport"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/customersupport"  />
+
+
+
+    <ImageView
+        android:id="@+id/indicator1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/Calendar"
+        android:src="@drawable/indicator" />
+
+    <ImageView
+        android:id="@+id/indicator2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/indicator1"
+        android:src="@drawable/indicator" />
+
+    <ImageView
+        android:id="@+id/indicator3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/indicator2"
+        android:src="@drawable/indicator" />
+
+
+
+</RelativeLayout>

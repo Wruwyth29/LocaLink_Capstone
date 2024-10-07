@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Localink</string>
+    <string name="select">Select Items</string>
+    <string-array name="Jobs">
+        <item>HandyMan Services</item>
+        <item>Laundry</item>
+        <item>Small Deliveries</item>
+        <item>On-Call Maid</item>
+        <item>Pet Services</item>
+    </string-array>
+    <string-array name="Settings">
+        <item>Account Settings</item>
+        <item>Privacy Settings</item>
+    </string-array>
+</resources>

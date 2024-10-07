@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".employer_job_posting">
+
+    <ImageView
+        android:id="@+id/EmployerJobPosting_logo"
+        android:layout_width="238dp"
+        android:layout_height="306dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/localink__1__removebg_preview" />
+
+    <TextView
+        android:id="@+id/EmployerJobPosting_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="163dp"
+        android:layout_below="@+id/EmployerJobPosting_logo"
+        android:layout_marginTop="-180dp"
+        android:text="Job Posting"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/EmployerJobPosting_BackBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/backbtn"/>
+
+    <Button
+        android:id="@+id/EmployerJobPosting_UserProfileBtn"
+        android:layout_width="103dp"
+        android:layout_height="102dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/userprofile"
+        />
+
+    <Button
+        android:id="@+id/EmployerJobPosting_NotificationBell"
+        android:layout_width="83dp"
+        android:layout_height="79dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/notificationbell"
+        />
+
+    <ImageView
+        android:id="@+id/EmployerJobPosting_UserProfile"
+        android:layout_width="201dp"
+        android:layout_height="188dp"
+        android:layout_below="@+id/EmployerJobPosting_Tv"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/userprofile"
+        android:layout_marginLeft="-20dp"
+        />
+
+    <TextView
+        android:id="@+id/EmployerJobPosting_ClientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/EmployerJobPosting_UserProfile"
+        android:text="Name of Client"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/EmployerJobPosting_Tv" />
+
+    <EditText
+        android:id="@+id/EmployerJobPosting_JobHire"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/EmployerJobPosting_ClientName"
+        android:layout_toRightOf="@id/EmployerJobPosting_UserProfile"
+        android:text="Looking to hire"
+        android:textColor="#929292"
+        android:textSize="15dp"
+        android:layout_marginLeft="-3dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EmployerJobPosting_WorkSlots"
+        android:layout_width="84dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/EmployerJobPosting_ClientName"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_toRightOf="@id/EmployerJobPosting_JobHire"
+        android:text="Work Slots"
+        android:textColor="#929292"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+639XX-XXX-XXXX"
+        android:layout_below="@id/EmployerJobPosting_JobHire"
+        android:layout_marginLeft="-3dp"
+        android:layout_toRightOf="@id/EmployerJobPosting_UserProfile"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adlam_display"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmployerJobPosting_UserProfile"
+        android:text="Work Place"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-20dp"/>
+
+    <EditText
+        android:id="@+id/EmployerJobPosting_JobPlace"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/EmployerJobPosting_UserProfile"
+        android:background="@drawable/border_text"
+        android:layout_centerInParent="true"
+        android:text="Where would the service would occur?"
+        android:textStyle="italic"
+        android:textColor="#929292"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmployerJobPosting_JobPlace"
+        android:text="Special Instructions"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/EmployerJobPosting_SpecialInstructions"
+        android:layout_width="357dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/EmployerJobPosting_JobPlace"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_text"
+        android:paddingLeft="10dp"
+        android:text="Do you have any specific requests?"
+        android:textColor="#929292"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmployerJobPosting_SpecialInstructions"
+        android:text="Date"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/EmployerJobPosting_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_below="@id/EmployerJobPosting_SpecialInstructions"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_text"
+        android:inputType="date"
+        android:text="MM/DD/YYYY"
+        android:textColor="#929292"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmployerJobPosting_SpecialInstructions"
+        android:layout_toRightOf="@id/EmployerJobPosting_Date"
+        android:text="Date"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/EmployerJobPosting_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_below="@id/EmployerJobPosting_SpecialInstructions"
+        android:layout_toRightOf="@id/EmployerJobPosting_Date"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_text"
+        android:inputType="time"
+        android:text="Time A.M/P.M"
+        android:textColor="#929292"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmployerJobPosting_SpecialInstructions"
+        android:layout_toRightOf="@id/EmployerJobPosting_Time"
+        android:text="Price"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/EmployerJobPosting_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_below="@id/EmployerJobPosting_SpecialInstructions"
+        android:layout_toRightOf="@id/EmployerJobPosting_Time"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_text"
+        android:inputType="time"
+        android:text="Price PHP"
+        android:textColor="#929292"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/EmployerJobPosting_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:layout_below="@id/EmployerJobPosting_Date"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:text="Save"/>
+
+    <Button
+        android:id="@+id/EmployerJobPosting_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:layout_below="@id/EmployerJobPosting_Date"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/EmployerJobPosting_Save"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="Cancel"/>
+
+    <Button
+        android:id="@+id/EmployerJobPosting_ChatBtn"
+        android:layout_width="101dp"
+        android:layout_height="92dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/chaticon" />
+
+    <Button
+        android:id="@+id/EmployerJobPosting_SupportChatBtn"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/customer_support_removebg_preview"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

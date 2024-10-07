@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up_third">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="238dp"
+        android:layout_height="306dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/localink__1__removebg_preview" />
+
+    <TextView
+        android:id="@+id/SignUp_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_below="@+id/Logo"
+        android:layout_marginTop="-150dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose what type of account you want to create."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/alata"
+        android:layout_below="@id/SignUp_Tv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/Step1_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUp_Tv"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/green_circle"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/Step2_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUp_Tv"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/Step1_img"
+        android:background="@drawable/green_circle"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/Step3_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUp_Tv"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/Step2_img"
+        android:background="@drawable/black_circle"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/Step4_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUp_Tv"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/Step3_img"
+        android:background="@drawable/green_circle"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/Step5_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUp_Tv"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/Step4_img"
+        android:background="@drawable/green_circle"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/SignUp3_ProfilePicture"
+        android:layout_width="172dp"
+        android:layout_height="164dp"
+        android:layout_below="@id/Step1_img"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/userprofile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set up your profile picture."
+        android:layout_below="@id/Step1_img"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:layout_below="@id/SignUp3_ProfilePicture"
+        android:text="Optional"
+        android:textStyle="italic"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_below="@id/SignUp3_ProfilePicture"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-10dp"/>
+
+    <EditText
+        android:id="@+id/SignUp3_FirstName"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SignUp3_ProfilePicture"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="First Name"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/SignUp3_MiddleName"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SignUp3_FirstName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="Middle Name(Optional)"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/SignUp3_LastName"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SignUp3_MiddleName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="Last Name"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/SignUp3_Age"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/SignUp3_LastName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="15dp"
+        android:paddingBottom="5dp"
+        android:text="Age"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_below="@id/SignUp3_LastName"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adlam_display"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <Button
+        android:id="@+id/SignUp3_Female"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/SignUp3_LastName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/SignUp3_Age"
+        android:background="@drawable/button1"
+        android:text="Female"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/SignUp3_Male"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/SignUp3_LastName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/SignUp3_Female"
+        android:background="@drawable/button2"
+        android:text="Male"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex"
+        android:layout_below="@id/SignUp3_LastName"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adlam_display"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="103dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthdate"
+        android:layout_below="@id/SignUp3_LastName"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adlam_display"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/SignUp3_Male"/>
+
+    <EditText
+        android:id="@+id/SignUp3_Birthdate"
+        android:layout_width="147dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/SignUp3_LastName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/SignUp3_Male"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="15dp"
+        android:paddingBottom="5dp"
+        android:text="MM/DD/YYYY"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:layout_below="@id/SignUp3_Age"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adlam_display"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:id="@+id/SignUp3_PhoneNumber"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/SignUp3_Age"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:text="09XX-XXX-XXXX"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Phone Number"
+        android:layout_below="@id/SignUp3_Birthdate"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adlam_display"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/SignUp3_PhoneNumber"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/SignUp3_ConfirmPhoneNumber"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/SignUp3_Age"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/SignUp3_PhoneNumber"
+        android:background="@drawable/border_text"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:text="09XX-XXX-XXXX"
+        android:textColor="#828282"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/Confirm_SignUp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:layout_below="@id/SignUp3_PhoneNumber"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:text="Confirm"/>
+
+    <Button
+        android:id="@+id/Cancel_SignUp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:layout_below="@id/SignUp3_ConfirmPhoneNumber"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/Confirm_SignUp3"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="Cancel"/>
+
+
+
+
+
+
+
+</RelativeLayout>

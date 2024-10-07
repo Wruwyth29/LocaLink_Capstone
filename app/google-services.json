@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "472654028985",
+    "project_id": "login-register-localink",
+    "storage_bucket": "login-register-localink.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472654028985:android:df798f5f2e5525b09b7b68",
+        "android_client_info": {
+          "package_name": "com.example.localink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1s0okO9d3FhBNNmaGMySblixJwatH0Is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

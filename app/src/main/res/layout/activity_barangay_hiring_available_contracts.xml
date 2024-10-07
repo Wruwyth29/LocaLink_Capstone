@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".barangay_hiring_available_contracts">
+
+    <TextView
+        android:id="@+id/Hiring"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="100dp"
+        android:text="Hiring"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/Barangay_Hiring_AvailableContract_BackBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/backbtn" />
+
+        <ImageView
+            android:id="@+id/Logo_BaranggayPage"
+            android:layout_width="238dp"
+            android:layout_height="208dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/localink__1__removebg_preview" />
+
+    <ImageButton
+        android:id="@+id/NotificationBell"
+        android:layout_width="71dp"
+        android:layout_height="63dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/notificationbell" />
+
+    <ImageButton
+        android:layout_width="113dp"
+        android:layout_height="116dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-15dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/userprofile" />
+
+
+        <TextView
+            android:id="@+id/Border"
+            android:layout_width="match_parent"
+            android:layout_height="414dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/Hiring"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/border_text" />
+
+        <TextView
+            android:layout_width="186dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/Border"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:text="Do you want to participate in this contract?"
+            android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/Border_small"
+        android:layout_width="205dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Border"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_text" />
+
+        <Button
+            android:id="@+id/Barangay_Hiring_AvailableContract_Yesbtn"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/Border_small"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button1"
+            android:text="Yes"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Barangay_Hiring_AvailableContract_Nobtn"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/Border_small"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/button2"
+            android:text="No"
+            android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/Detail"
+                android:layout_width="55dp"
+                android:layout_height="39dp"
+                android:layout_below="@+id/Hiring"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="120dp"
+                android:text="Detail"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_AvailableContract_StartIn_tv"
+                android:layout_width="58dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/Detail"
+                android:layout_marginLeft="30dp"
+                android:text="Start In:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_AvailableContract_EndIn_tv"
+                android:layout_width="58dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/Barangay_Hiring_AvailableContract_StartIn_tv"
+                android:layout_marginLeft="30dp"
+                android:text="End In:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_AvailableContract_Time_tv"
+                android:layout_width="58dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/Barangay_Hiring_AvailableContract_EndIn_tv"
+                android:layout_marginLeft="30dp"
+                android:text="Time:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_AvailableContract_Instructions_tv"
+                android:layout_width="123dp"
+                android:layout_height="26dp"
+                android:layout_below="@id/Barangay_Hiring_AvailableContract_Time_tv"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Instructions"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_AvailableContract_Instructions"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/Barangay_Hiring_AvailableContract_Instructions_tv"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_text" />
+
+            <TextView
+                android:id="@+id/Barangay_Hiring_AvailableContract_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Hiring"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="85dp"
+                android:text="Available Contract"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Barangay_Hiring_AvailableContract_Title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/Hiring"
+                    android:layout_marginTop="50dp"
+                    android:text="Name of the contract"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                   />
+
+
+</RelativeLayout>

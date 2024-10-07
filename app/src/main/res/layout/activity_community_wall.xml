@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".community_wall">
+
+    <ImageView
+        android:id="@+id/CommunityWall_logo"
+        android:layout_width="238dp"
+        android:layout_height="306dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/localink__1__removebg_preview" />
+
+    <TextView
+        android:id="@+id/CommunityWall_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="146dp"
+        android:layout_below="@+id/CommunityWall_logo"
+        android:layout_marginTop="-180dp"
+        android:text="Community Wall"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/CommunityWall_UserProfileBtn"
+        android:layout_width="103dp"
+        android:layout_height="102dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/userprofile"
+        />
+
+    <Button
+        android:id="@+id/CommunityWall_NotificationBell"
+        android:layout_width="83dp"
+        android:layout_height="79dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/notificationbell"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_below="@id/CommunityWall_logo"
+        android:layout_marginTop="-120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/TransactionHistory_Panel1"
+                android:layout_width="389dp"
+                android:layout_height="450dp"
+                android:background="@drawable/border_text"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/userprofile"
+                    android:layout_marginLeft="-14dp"/>
+
+
+                <TextView
+                    android:id="@+id/CommunityWall_UserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brgy. San Isidro Labrador"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/CommunityWall_Pinned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pinned a Post"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="70dp"
+                    android:layout_below="@id/CommunityWall_UserName"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/CommunityWall_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 min ago"
+                    android:textSize="12sp"
+                    android:layout_below="@id/CommunityWall_Pinned"
+                    android:layout_marginLeft="70dp"
+                    android:textColor="@android:color/darker_gray"/>
+
+                <ImageButton
+                    android:id="@+id/CommunityWall_threedots"
+                    android:layout_width="51dp"
+                    android:layout_height="13dp"
+                    android:layout_below="@id/CommunityWall_Time"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="269dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/threedots" />
+
+                <ImageView
+                    android:id="@+id/CommunityWall_postimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="199dp"
+                    android:layout_below="@id/CommunityWall_threedots"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/postimage"
+                    android:clipToOutline="true"
+                    android:contentDescription="User profile picture"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/CommunityWall_Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="93dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/CommunityWall_postimage"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/CommunityWall_Caption">
+
+                    <ImageButton
+                        android:id="@+id/likeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/heart"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="Like button"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                    <TextView
+                        android:id="@+id/likeCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="21 likes"
+                        android:layout_marginStart="4dp"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="40dp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/commentButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/comment"
+                        android:contentDescription="Comment button"
+                        android:layout_marginLeft="60dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginStart="16dp"/>
+
+                    <TextView
+                        android:id="@+id/commentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 comments"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="80dp"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/TransactionHistory_Panel2"
+                android:layout_width="389dp"
+                android:layout_height="100dp"
+                android:background="@drawable/border_text"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/CommunityWall_UserProfile_Panel2"
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="115dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/userprofile"/>
+
+                <TextView
+                    android:id="@+id/CommunityWall_UserName_Panel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time Stamp"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel2"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/TransactionHistory_Panel3"
+                android:layout_width="389dp"
+                android:layout_height="100dp"
+                android:background="@drawable/border_text"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/CommunityWall_UserProfile_Panel3"
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="115dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/userprofile"/>
+
+                <TextView
+                    android:id="@+id/CommunityWall_UserName_Panel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel3"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel3"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time Stamp"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel3"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/TransactionHistory_Panel4"
+                android:layout_width="389dp"
+                android:layout_height="100dp"
+                android:background="@drawable/border_text"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/CommunityWall_UserProfile_Panel4"
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="115dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/userprofile"/>
+
+                <TextView
+                    android:id="@+id/CommunityWall_UserName_Panel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel4"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel4"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time Stamp"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel4"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/TransactionHistory_Panel5"
+                android:layout_width="389dp"
+                android:layout_height="100dp"
+                android:background="@drawable/border_text"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/CommunityWall_UserProfile_Panel5"
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="115dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/userprofile"/>
+
+                <TextView
+                    android:id="@+id/CommunityWall_UserName_Panel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel5"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel5"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time Stamp"
+                    android:fontFamily="@font/adlam_display"
+                    android:textSize="15dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_toRightOf="@id/CommunityWall_UserProfile_Panel5"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/TransactionHistory_UserProfileBtn"
+        android:layout_width="103dp"
+        android:layout_height="102dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/userprofile"
+        />
+
+    <Button
+        android:id="@+id/TransactionHistory_NotificationBell"
+        android:layout_width="83dp"
+        android:layout_height="79dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/notificationbell"
+        />
+
+    <Button
+        android:id="@+id/ChatBtn"
+        android:layout_width="101dp"
+        android:layout_height="92dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/chaticon" />
+
+    <Button
+        android:id="@+id/SupportChatBtn"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/customer_support_removebg_preview"
+        />
+
+    <ImageButton
+        android:id="@+id/CommunityWall_BackBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/backbtn"/>
+
+
+</RelativeLayout>

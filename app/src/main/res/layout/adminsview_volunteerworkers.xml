@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp_First">
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="36dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/backbtn2" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bell" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/localink_logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#22996e"
+        android:text="Submit"
+        android:textColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="370dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="220dp"
+        android:layout_below="@id/search">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="370dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="39dp"
+                android:background="@drawable/border_text">
+
+                <TextView
+                    android:id="@+id/volunteerworkers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Volunteer Workers"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/user1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="140dp"
+                    android:src="@drawable/user2" />
+
+                <TextView
+                    android:id="@+id/gigwork_online1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Online"
+                    android:textColor="#929292"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/gigwork_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Micko Sapinoso"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gigwork_work1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Collect Plastic Bottles"
+                    android:textColor="#929292"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="370dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="39dp"
+                android:background="@drawable/border_text">
+
+
+                <ImageView
+                    android:id="@+id/user"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="140dp"
+                    android:src="@drawable/user2" />
+
+                <TextView
+                    android:id="@+id/gigwork_online2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Online"
+                    android:textColor="#929292"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/gigwork_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Zephanie Soriano"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gigwork_work2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="55dp"
+                    android:text="Street Sweeping"
+                    android:textColor="#929292"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="370dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="39dp"
+                android:background="@drawable/border_text">
+
+
+                <ImageView
+                    android:id="@+id/user3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="140dp"
+                    android:src="@drawable/user2" />
+
+                <TextView
+                    android:id="@+id/gigwork_online3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Online"
+                    android:textColor="#929292"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/gigwork_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Angel Mirasol"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gigwork_work3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="55dp"
+                    android:text="Collect Plastic Bottles"
+                    android:textColor="#929292"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="390dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="39dp"
+                android:background="@drawable/border_text">
+
+
+                <ImageView
+                    android:id="@+id/user4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="140dp"
+                    android:src="@drawable/user2" />
+
+                <TextView
+                    android:id="@+id/gigwork_online4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Online"
+                    android:textColor="#929292"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/gigwork_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="35dp"
+                    android:text="William Gabat"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gigwork_work4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="55dp"
+                    android:text="Collect Plastic Bottles"
+                    android:textColor="#929292"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="370dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="39dp"
+                android:background="@drawable/border_text">
+
+
+                <ImageView
+                    android:id="@+id/user5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="140dp"
+                    android:src="@drawable/user2" />
+
+                <TextView
+                    android:id="@+id/gigwork_online5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Online"
+                    android:textColor="#929292"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/gigwork_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Julien Villanueva"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gigwork_work5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="55dp"
+                    android:text="Collect Plastic Bottles"
+                    android:textColor="#929292"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/chatsupport"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="73dp"
+        android:src="@drawable/customersupport" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="239dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginStart="21dp"
+        android:hint="What are you looking for?"
+        android:inputType="text"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
